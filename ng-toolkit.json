@@ -1,0 +1,8 @@
+{
+  "universal": {
+    "project": "angular-universal-static-prerendering",
+    "skipInstall": false,
+    "directory": ".",
+    "http": true
+  }
+}
