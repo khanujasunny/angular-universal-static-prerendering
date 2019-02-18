@@ -1,0 +1,12 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading" *ngIf="projects; else noProject">PROJECTS</h1>
+    <div class="list-group display-5" *ngFor="let project of projects">
+      <a href="#" class="list-group-item list-group-item-action" [innerHtml]="project.name"></a>
+    </div>
+    <ng-template #noProject>Sorry! No Project Found</ng-template>
+
+  </div>
+</section>
+
+
