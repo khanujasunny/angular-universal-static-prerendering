@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build:server:prod": "ng run angular-universal-static-prerendering:server && webpack --config webpack.server.config.js --progress --colors",
     "build:browser:prod": "ng build --prod",
-    "build:prod": "npm run build:server:prod && npm run build:browser:prod",
+    "build:prod": "npm run build:browser:prod && npm run build:server:prod",
     "server": "node local.js"
   },
   "private": true,
