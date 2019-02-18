@@ -9,11 +9,9 @@ export class HomeComponent implements OnInit {
 
   public text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt lectus ipsum,
   sed condimentum elit pellentesque nec. Ut iaculis auctor ipsum, sed vulputate turpis condimentum eget.`;
-  public images = [
-  'assets/1.jpg', 'assets/2.jpg', 'assets/3.jpg'
-  ];
+  public images = [].concat(...Array(5).fill(['assets/1.jpg', 'assets/2.jpg', 'assets/3.jpg']));
+
   constructor() {
-    this.images = [...this.images, ...this.images , ...this.images, ...this.images];
   }
 
   ngOnInit() {

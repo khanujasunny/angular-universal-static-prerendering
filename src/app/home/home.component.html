@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-4" *ngFor="let image of images">
+  <div class="col-md-4" *ngFor="let image of images; let i = index;">
     <div class="card mb-4 box-shadow">
       <img class="card-img-top" style="height: 225px; width: 100%; display: block;" [src]="image" data-holder-rendered="true">
       <div class="card-body">
@@ -9,7 +9,7 @@
             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
           </div>
-          <small class="text-muted">9 mins</small>
+          <small class="text-muted">Item: {{i+1}}</small>
         </div>
       </div>
     </div>
