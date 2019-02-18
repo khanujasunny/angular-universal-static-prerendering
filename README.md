@@ -1,4 +1,5 @@
 # AngularUniversalStaticPrerendering
+This project demonstrate Angular Universal using ng-toolkit and implements static pre-rending
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
 
